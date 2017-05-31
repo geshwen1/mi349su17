@@ -1,0 +1,55 @@
+https://dash.generalassemb.ly/geshwen1/build-your-own-personal-website
+
+<!DOCTYPE html>
+<head>
+  <title>WiLlIaM gEsHwEnDeR</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("http://dash.ga.co/assets/anna-bg.png");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+    }
+    img{
+      width: 400px;
+      }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    button {
+      background: red;
+      color: white;
+      padding: 10px;
+      border:0;
+      font-size:18px;
+      
+    }
+  </style>
+</head>
+<body>
+  <img src="https://usatftw.files.wordpress.com/2017/05/spongebob.jpg?w=1000&h=600&crop=1">
+  <p>HeLlO! I'm WiLlIaM, i'M iNtErNiNg DoInG aPpLiCaTiOn EnGiNeErInG, aNd I lIkE tO LiStEn To HiP hOp!</p>
+  <input type="email" placeholder="Your email" id="email">
+  <button onclick="clickab()">TrY mE oUt!</button>
+  <script>
+    function clickab(){
+      var cl = document.getElementById("email").value;
+      if (cl !== ""){
+        alert(cl);
+      }
+      else{
+        alert("Enter Email");
+      }
+    }
+  </script>
+  
+</body>
+
+Added js to the button for some fun, enjoy!!!
