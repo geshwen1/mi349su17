@@ -1,0 +1,93 @@
+https://dash.generalassemb.ly/geshwen1/build-your-own-blog-theme
+
+
+
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://usatftw.files.wordpress.com/2017/05/spongebob.jpg?w=1000&h=600&crop=1');
+      background-size: cover;
+      
+      color: purple;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+    img {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://vignette2.wikia.nocookie.net/spongebob/images/0/0b/180px-DoodleBob.Pencil.jpg/revision/latest?cb=20130805194955">
+    <h1>Bill's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">About Mr. SquarePants</a></li>
+      <li><a href="https://media.giphy.com/media/3h5VTO6F1i2gU/giphy.gif">Dab</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Writing</h2>
+    <p>I'm really awful at writing, I don't know what to write about either, so I decided to make it fun.</p>
+    <button id='a'>End the awkward moment</button>
+  </article>
+  <article>
+    <h2>2 Chainz</h2>
+    <p>I'd go as far as calling him the best rapper out there. At first you may not think so, but you must have never heard the bars of this man. </p>
+    <button id="b">TB</button>
+  </article>
+  <article>
+    <h2>Notorious B.I.G.</h2>
+    <p>When I first tried to write an article on this amazing rapper back in the 6th grade, I got an after-school detention. Sure, he may have said bars that aren't school appropriate, but I didn't discuss his lyrics. I discussed his importance in the hip-hop movement. </p>
+    <button id="c">MyStErY rEvEaLeD</button>
+  </article>
+  <script>
+    $("#a").on("click", function() {
+      alert("lol");
+    });
+    $("#b").on("click", function() {
+      alert("*distant shout* 2 chaaaaaainz *cue music*");
+    });
+    $("#c").on("click", function() {
+      alert("spongebob is the lowkey best if you can see.");
+    });
+  </script>
+</body>
+
+
