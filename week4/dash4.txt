@@ -1,0 +1,125 @@
+https://dash.generalassemb.ly/geshwen1/build-your-own-business-website
+
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 600px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://static.stereogum.com/uploads/2012/11/The-Pharcyde-Bizarre-Ride.jpg");
+}
+.second{
+  background-image: url("https://i.scdn.co/image/01bb4663dcfa3b8b4fd405ef493dfe447805aa57");
+}
+.dessert{
+  background-image: url("https://images.genius.com/b6af15fbfff665190ea9185474562cf0.500x500x1.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>The Illezt from da Billezt</h1>
+<h2>Bill's top music picks</h2>
+<div class="first">
+  <p>Bizarre Ride 2 the Pharcyde <span class="price">The Pharcyde</span><br />
+  <small>Pharcyde is a legendary music group. They weren't about the whole tough-face of the hip-hop scene, but instead a feel-good let-loose type of vibe.</small></p>
+</div>
+
+<div class="second">
+  <p>Graduation<span class="price">Kanye West</span><br />
+  <small>As I always say, Yeezy makes the livin' easy! Kanye isn't just an icon in rap, he is the father of modern-day rap. With his bars of a god, his ego is fully acceptable and even a worthy role-model.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Based On A T.R.U. Story <span class="price">2 Chainz</span><br />
+  <small>I'm always talking about the lyrical geniosity of this great man. He's been around for a long time and he's not going to go anywhere anytime soon.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
